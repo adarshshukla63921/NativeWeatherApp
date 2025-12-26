@@ -9,7 +9,7 @@ data class CurrentDto(
     @field:Json(name = "last_updated") val lastUpdated: String?="",
     @field:Json(name = "temp_c") val tempC: Double?=0.0,
     @field:Json(name = "temp_f") val tempF: Double?=0.0,
-    @field:Json(name = "is_day") val isDay: Int?=0,
+    @field:Json(name = "is_day") val isDay: String?="",
     @field:Json(name = "condition") val condition: ConditionDto?,
     @field:Json(name = "wind_mph") val windMph: Double?=0.0,
     @field:Json(name = "wind_kph") val windKph: Double?=0.0,

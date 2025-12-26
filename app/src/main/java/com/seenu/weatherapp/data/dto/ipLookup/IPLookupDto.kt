@@ -11,7 +11,7 @@ data class IPLookupDto(
     @field:Json(name = "continent_name") val continentName : String? = "",
     @field:Json(name = "country_code") val countryCode : String? = "",
     @field:Json(name = "country_name") val countryName : String? = "",
-    @field:Json(name = "is_eu") val isEu : Int? = 0,
+    @field:Json(name = "is_eu") val isEu : String? = "false",
     @field:Json(name = "geoname_id") val geonameID : Long? = 0,
     @field:Json(name = "city") val city : String? = "",
     @field:Json(name = "region") val region : String? ="",
