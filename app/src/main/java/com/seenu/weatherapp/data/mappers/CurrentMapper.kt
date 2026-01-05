@@ -13,6 +13,7 @@ fun CurrentDto.toDomain() : Current {
         humidity = humidity?:0,
         isDay = (isDay ?: 0) == 1,
         condition = condition?.toDomain()?: throw Exception("Missing Data"),
-        airQuality = airQuality?.toDomain()?: throw Exception("Missing Data")
+        airQuality = airQuality?.toDomain()?: throw Exception("Missing Data"),
+        windKmph = windKph?:0.0,
     )
 }

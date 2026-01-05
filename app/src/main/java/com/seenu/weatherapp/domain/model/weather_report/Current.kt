@@ -8,5 +8,6 @@ data class Current(
     val humidity : Int,
     val isDay : Boolean,
     val condition: Condition,
-    val airQuality: AirQuality
+    val airQuality: AirQuality,
+    val windKmph : Double
 )
